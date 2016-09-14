@@ -1,0 +1,116 @@
+@import "../variables";
+#app{
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  width: inherit;
+  height: inherit;
+  background: url('http://7xnjvz.com1.z0.glb.clouddn.com/2016091468798code.jpg') top center;
+  background-size: cover
+}
+.container-inner {
+  position: relative
+}
+
+.wall {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 490px;
+  height: 300px;
+  margin: -145px 0 0 -220px;
+  li a{
+  display: block;
+  width:100%;
+  height:100%;
+  color: #fff;
+}
+}
+
+.wall-column {
+  float: left;
+  width: 150px;
+  height: 300px;
+  color: #fff;
+  margin-right: 20px;
+  &:nth-child(3) {
+    margin: 0;
+  }
+  li {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    transition: all .3s linear 0s;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    }
+  }
+}
+.wall-middle li, .wall-left li:nth-child(2), .wall-right li:nth-child(1) {
+  text-align: center;
+  line-height: 100px;
+}
+.wall-left li:nth-child(1) {
+  height: 220px;
+  text-align: center;
+  background-color: #D8D1CC;
+}
+.wall-left li:nth-child(2) {
+  background-color: #B0A9AC;
+}
+.wall-middle li:nth-child(1) {
+  background-color: #F0EBEC;
+}
+.wall-middle li:nth-child(2) {
+  background-color: #D4C5BA;
+}
+.wall-middle li:nth-child(3) {
+  background-color: #826D68;
+}
+.wall-right li:nth-child(1) {
+  background-color: #5C4743;
+}
+.wall-right li:nth-child(2) {
+  height: 220px;
+  text-align: center;
+  background-color: #D8D1CC;
+}
+.panel-head {
+  text-align: center;
+  padding: 50px 0 40px 0;
+}
+.panel-head-avatar {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+.panel-head-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+.panel-body p {
+  color: #fff;
+}
+
+// 模板
+#tpl_demo {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 888;
+}
+
