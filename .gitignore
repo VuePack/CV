@@ -1,9 +1,9 @@
 .DS_Store
 Thumbs.db
 db.json
+.sass-cache/
 *.log
 /node_modules/*
-!/node_modules/gulp-md5-plus
 public/
 .deploy*/
 src/_drafts

@@ -2,7 +2,7 @@
  * @Author: Leon
  * @Date:   2016-08-17 13:45:44
  * @Last Modified by:   kevinli
- * @Last Modified time: 2016-09-14 22:25:46
+ * @Last Modified time: 2016-09-15 12:29:02
  */
 var gulp          = require('gulp'), //基础库
 sass              = require('gulp-ruby-sass'), //sass
@@ -74,7 +74,7 @@ gulp.task("build:common", function() {
  * 编译scss
  */
 gulp.task('build:scss', function() {
-    // var processors = [px2rem({remUnit: 75})];
+    var processors = [px2rem({remUnit: 75})];
 
     //单独打包成common文件（公共）
     sass(_srcCommonCss, {
