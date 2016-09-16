@@ -3,7 +3,7 @@
     <section v-show="loading">
       <c-loader></c-loader>
     </section>
-    <section v-show="content">
+    <section v-show="content" v-bind:style="styleMask">
      <c-intro></c-intro>
     </section>
     <section v-show="content">
@@ -28,7 +28,11 @@ export default {
   data(){
     return {
       loading: true,
-      content: false
+      content: false,
+      styleMask:{
+        width: '100%',
+        height: '100%'
+      }
     }
   },
   components: {
@@ -72,10 +76,6 @@ export default {
   height: inherit;
   background: url(http://7xnjvz.com1.z0.glb.clouddn.com/2016091468798code.jpg) top center;
   background-size: cover;
-  section{
-    width:100%;
-    height: 100%;
-  }
 }
 #tpl_demo{
   display: none;
