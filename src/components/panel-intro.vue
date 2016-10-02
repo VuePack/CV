@@ -1,9 +1,11 @@
 <template>
-    <div class="panel-mask"></div>
-    <div class="panel-intro">
-        <p class="msg">爱折腾,爱旅游,热爱生活</p>
-        <p class="text">Front-end Developer</p>
-        <p class="copyright">©Copyright 2016 - Leon All rights reserved.</p>
+    <div style="width:100%;height:100%">
+        <div class="panel-mask"></div>
+        <div class="panel-intro">
+            <p class="msg">爱折腾,爱旅游,热爱生活</p>
+            <p class="text">Front-end Developer</p>
+            <p class="copyright">©Copyright 2016 - Leon All rights reserved.</p>
+        </div>
     </div>
 </template>
 

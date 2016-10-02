@@ -41,7 +41,7 @@ export default {
     "c-layer":Layer,
     "c-wall":Wall
   },
-  ready(){
+  mounted(){
     var _this = this;
    $(window).load(function() {
        _this.loading = false;
