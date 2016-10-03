@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="keywords" content="前端,简历,HTML5,CSS3,jQuery,JavaScript,react,vueJs">
+<meta name="description" content="李宙凯-个人简历">
+<title>李宙凯</title>
+<link rel="shortcut icon" href="http://7xnjvz.com1.z0.glb.clouddn.com/favicon.ico?v=6.0.0">
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://7xnjvz.com1.z0.glb.clouddn.com/cv_style.css">
+<style>
+html {
+    font-family: Helvetica, Arial, "Hiragino Sans GB", "微软雅黑", "宋体", STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+#btn-print {
+position: fixed;
+top: 50px;
+right: 80px;
+}
+
+@media print {
+    a[href]:after {
+        content: none !important;
+    }
+    #btn-print {
+        display: none;
+    }
+    body {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 1100px){
+    #btn-print {
+        display: none;
+    }
+}
+
+
+@page {
+    size: auto;
+    margin: 0;
+}
+</style>
+
+<body>
+    <div class="container">
+
+        <a title="下载或打印简历" id="btn-print" class="btn btn-info" onclick=window.print()>下载或打印简历</a>
+
+        <section class="row">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="profile-card">
+                        <div class="profile-pic"><img src="http://7xnjvz.com1.z0.glb.clouddn.com/cv_avatar.jpeg" class="media-object img-circle center-block"></div>
+                        <div class="contact-details">
+                            <div class="name-and-profession">
+                                <h3 itemprop="name" class="text-bolder name">李宙凯<small>24岁</small></h3>
+                                <h5 itemprop="jobTitle" class="text-muted">web前端开发（偏向移动端）<b>工作经验：1.5年</b></h5>
+                            </div>
+                            <div class="detail"><span class="icon"><i class="fa fa-lg fa-location-arrow"></i></span><span class="info">杭州</span></div>
+                            <div class="detail"><span class="icon"><i class="fa fa-lg fa-phone"></i></span><span class="info">15888867998</span></div>
+                            <div class="detail"><span class="icon"><i class="fa fa-lg fa-envelope"></i></span><span class="info">fe.lizhoukai@gmail.com </span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="card-wrapper">
+                <div class="card background-card">
+                    <h4 id="about">  <span class="fa fa-lg fa-user"></span><span class="title ng-binding">简介</span></h4>
+                    <div class="card-nested">
+                        <p class="ng-binding">爱折腾，爱旅游，热爱生活。注重团队配合沟通。
+                        </p>
+                        <p class="ng-binding">
+                            求学欲望强，想加入一个成熟的前端团队。 想一起切磋交流，稳稳的进步， 给团队带来效率的提升和便利。
+                        </p>
+                        <p class="ng-binding">重度MAC使用者，Unix上进行开发，熟悉基本Linux命令
+                        </p>
+                        <p class="ng-binding">职业规划： 个人关注点侧重于移动端和hybrid app方面的技术，想用一些新技术和新知识（React , Vuejs）尝试进行开发，长久目标转型为技术型的Team Leader。
+                        </p>
+                        <p class="ng-binding">博客：http://likr.cn
+                        </p>
+                        <p class="ng-binding">Github：http://github.com/lizhoukai
+                        </p>
+                        <p class="ng-binding">简历WEB版：http://likr.cn/CV
+                        </p>
+                    </div>
+                    <h4 id="work-experience" >
+                        <span class="fa fa-lg fa-building"></span>
+                        <span class="title ng-binding">工作经历</span>
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li ng-repeat="exp in work track by $index" class="card-nested ng-scope">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm"><strong class="ng-binding">杭州万一科技</strong></p>
+                            </div>
+                            <p class="text-muted"><small><span class="space-right ng-binding">2015-05 - 2016-03</span></small></p>
+                            <p class="ng-binding">拇指时间产品介绍官网</p>
+                            <ul>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">独立负责页面的开发，用了wow.js配合css3动画，实现页面滚动响应动画的交互效果</li>
+                            </ul>
+                            <p class="ng-binding">拇指时间日历（PC端 or 移动端）</p>
+                            <ul>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">评估功能的完成时间，并功能的迭代开发。</li>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">使用git和同事行协同开发流程，并了解git的原理，使用gulp自动化构建项目</li>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">PC端数据采用了json+Ajax获取接口数据渲染，了解了ajax的原理和理解jsonp的优缺点</li>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">移动端适采用了淘宝的Flexible解决方案实现H5页面多终端的适配</li>
+                            </ul>
+                        </li>
+                        <li ng-repeat="exp in work track by $index" class="card-nested ng-scope">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm"><strong class="ng-binding">杭州大合国际控股集团</strong></p>
+                            </div>
+                            <p class="text-muted"><small><span class="space-right ng-binding">2014-12 - 2015-03</span></small></p>
+                            <p class="ng-binding">微信第三方平台</p>
+                            <ul>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">熟悉微信公众账号提供营销推广服务的第三方平台</li>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">了解微信公共号后台运营流程，后台的管理和模板的制作</li>
+                            </ul>
+                            <p class="ng-binding">金融理财（PC端 or 移动端）</p>
+                            <ul>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">根据业务需求，评估完成时间，画好流程图</li>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">HTML的结构化，页面可复用组件化，该webapp采用flex布局，总结了一些真机测试兼容性的问题
+                                </li>
+                                <li ng-repeat="highlight in exp.highlights track by $index" class="ng-binding ng-scope">学习了flex布局，研究了多个移动多终端的真机适配解决方案</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 id="skills" ng-hide="!skills.length"><span class="fa fa-lg fa-code"></span><span class="title ng-binding">专业技能</span></h4>
+                    <ul class="list-unstyled">
+                        <li ng-repeat="skill in skills track by $index" class="card-nested skill master ng-scope">
+                            <span ng-repeat="keyword in skill.keywords track by $index" class="ng-binding ng-scope">熟悉JavaScript，JQ，HTML5，CSS3可以快速迭代开发，了解react，Vuejs思想，还在学习想尝试进行开发。 &nbsp;</span>
+                            <span ng-repeat="keyword in skill.keywords track by $index" class="ng-binding ng-scope">熟悉css等盒式布局 &nbsp;</span>
+                            <span ng-repeat="keyword in skill.keywords track by $index" class="ng-binding ng-scope">了解gulp、webpack等自动化构建工具 &nbsp;</span>
+                            <span ng-repeat="keyword in skill.keywords track by $index" class="ng-binding ng-scope"> &nbsp;</span>
+                        </li>
+                    </ul>
+                    <h4 id="education" ng-hide="!education.length"><span class="fa fa-lg fa-mortar-board"></span><span class="title ng-binding">教育经历</span></h4>
+                    <ul class="list-unstyled">
+                        <li ng-repeat="edu in education track by $index" class="card-nested ng-scope">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm"><strong class="ng-binding">计算机科学与技术, &nbsp; 北京航空航天大学（远程教育）</strong></p>
+                                <p class="text-muted"><small class="ng-binding">2012 -  2015</small></p>
+                                <div class="space-top labels"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4 id="interests" ng-hide="!interests.length"><span class="fa fa-lg fa-heart"></span><span class="title ng-binding">兴趣爱好</span></h4>
+                    <ul class="list-unstyled">
+                        <li ng-repeat="inter in interests" class="card-nested ng-scope">
+                            <p> <strong class="ng-binding">滑雪，旅游，看书，逛知乎，折腾新技术</strong></p>
+                            <div class="space-top labels"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
