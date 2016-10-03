@@ -2,6 +2,7 @@ var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
+var px2rem = require('postcss-px2rem')
 
 module.exports = {
   entry: {
@@ -62,9 +63,16 @@ module.exports = {
   vue: {
     loaders: utils.cssLoaders(),
     postcss: [
+      require('postcss-px2rem')({
+        baseDpr: 2,             // base device pixel ratio (default: 2)
+        threeVersion: false,    // whether to generate @1x, @2x and @3x version (default: false)
+        remVersion: true,       // whether to generate rem version (default: true)
+        remUnit: 75,            // rem unit value (default: 75)
+        remPrecision: 6         // rem precision (default: 6)
+      }),
       require('autoprefixer')({
-        browsers: ['last 2 versions']
-      })
+          browsers: ['Firefox >= 20','> 5%','last 2 versions']
+        })
     ]
   }
 }

@@ -1,29 +1,38 @@
 <template>
-    <div style="width:100%;height:100%">
+    <section class="panel-copyright">
         <div class="panel-mask"></div>
         <div class="panel-intro">
-            <p class="msg">爱折腾,爱旅游,热爱生活</p>
-            <p class="text">Front-end Developer</p>
-            <p class="copyright">©Copyright 2016 - Leon All rights reserved.</p>
+            <p class="msg">{{message}}</p>
+            <p class="text">{{text}}</p>
+            <p class="copyright">{{copyright}}</p>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
 export default {
   data () {
     return {
+        message:'爱折腾,爱旅游,热爱生活',
+        text:'Front-end Developer',
+        'copyright':'©Copyright 2016 - Leon All rights reserved.'
     }
   }
 }
 </script>
 
-<style  lang="scss">
+<style  lang="scss" scoped>
+.panel-copyright{
+    min-width:35%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0
+}
 // 个人介绍遮罩层
 .panel-mask {
     position: relative;
-    width: 38%;
-    min-width: 630px;
+    width: 100%;
     height: 100%;
     background: linear-gradient(-109deg, transparent 28.5em, #000 0);
     opacity: .3;
@@ -39,10 +48,34 @@ export default {
     }
     .msg,
     .text {
-        font-size: 14px;
+        font-size: 22px;
     }
     .copyright {
-        font-size: 13px;
+        font-size: 18px;
     }
 }
+@media screen and (max-width: 960px) {
+    .panel-copyright{
+        width: 100%;
+    }
+    .panel-mask{
+        background: rgba(0,0,0,.5);
+    }
+ } /*兼容平板*/
+@media screen and (max-width: 640px) {
+    .panel-copyright{
+        width: 100%;
+    }
+    .panel-mask{
+        background: rgba(0,0,0,.5);
+    }
+ } /*兼容手机*/
+@media screen and (max-width: 480px) {
+    .panel-copyright{
+        width: 100%;
+    }
+    .panel-mask{
+        background: rgba(0,0,0,.5);
+    }
+ }
 </style>

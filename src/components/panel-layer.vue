@@ -1,24 +1,20 @@
 <template>
-  <div class="panel-layer">
+  <section class="panel-layer">
       <div data-offset="90" class="clouds cover"></div>
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
   data () {
     return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      msg: 'Hello World!'
+
     }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .panel-layer {
     position: absolute;
     top: 0;

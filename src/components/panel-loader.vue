@@ -1,7 +1,7 @@
 <template>
-    <div id="loader">
+    <section class="panel-loader">
         <div class="loader-inner"><span class="double-bounce1"></span> <span class="double-bounce2"></span></div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -15,30 +15,25 @@ export default {
 }
 </script>
 
-<style lang="scss" >
-#loader {
-  position: fixed;
-  top: 0;
-  left: 0;
+<style lang="scss" scoped>
+.panel-loader {
+  display: flex;
+  justify-content:center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: #E7D0B5;
   z-index: 999;
 }
 .loader-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   margin: -20px 0 0 -20px;
 }
 .double-bounce1, .double-bounce2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.6;
@@ -46,6 +41,7 @@ export default {
   animation: bounce 2.0s infinite ease-in-out;
 }
 .double-bounce2 {
+  margin-top: -100px;
   -webkit-animation-delay: -1.0s;
   animation-delay: -1.0s;
 }
