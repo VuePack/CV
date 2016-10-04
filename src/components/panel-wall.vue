@@ -13,22 +13,22 @@
                   <p>{{info.text}}</p>
                 </div>
             </li>
-            <li  v-else @click="casesShow">{{info.name}}</li>
+            <li  v-else @click="casesShow(info.status)">{{info.name}}</li>
         </ul>
 
         <ul class="wall-middle wall-column" v-for="item in items" v-if="item.type == 'middle'">
 
             <template v-for="info in item.list">
-              <li v-if="info.name == '关于我'">
+              <li v-if="info.status == 'About'">
                   <a href="about.html">{{info.name}}</a>
               </li>
               <li v-if="!info.name"></li>
-              <li v-if="info.name == 'CSS3'" @click="casesShow">{{info.name}}</li>
+              <li v-if="info.status == 'Mood'" @click="casesShow(info.status)">{{info.name}}</li>
             </template>
         </ul>
 
         <ul class="wall-right wall-column" v-for="item in items" v-if="item.type == 'right'">
-            <li v-for="info in item.list" v-if="info.url"  @click="casesShow" >
+            <li v-for="info in item.list" v-if="info.url"  @click="casesShow(info.status)" >
                 <a>
                     <div class="item-head">
                         <p>{{info.name}}</p>
@@ -39,7 +39,7 @@
                   <p>{{info.text}}</p>
                 </div>
             </li>
-            <li v-else @click="casesShow">{{info.name}}</li>
+            <li v-else @click="casesShow(info.status)">{{info.name}}</li>
         </ul>
 
       </section>
@@ -50,28 +50,27 @@
 export default {
   data () {
     return {
-      msg: 'Hello World!',
       items:[
         {
           type:'left',
           list:[
             {name:'个人博客',url:'http://7xnjvz.com1.z0.glb.clouddn.com/avatar.png',link:'http://likr.cn',text:'记录零散思绪和成长记录'},
-            {name:'HTML5',status:'html'}
+            {name:'JavaScript',status:'JavaScript'}
           ]
         },
         {
           type:'middle',
           list:[
-            {name:'CSS3',status:'css'},
+            {name:'杂谈',status:'Mood'},
             {name:''},
-            {name:'关于我'}
+            {name:'关于我',status:'About'}
           ]
         },
         {
           type:'right',
           list:[
-            {name:'JavaScript',status:'js'},
-            {name:'折腾案例',url:'http://7xnjvz.com1.z0.glb.clouddn.com/2016091494119code.png',status:'mobile',text:'有趣的idea，疯狂造轮子 ~'}
+            {name:'Mobile',status:'Mobile'},
+            {name:'折腾案例',url:'http://7xnjvz.com1.z0.glb.clouddn.com/2016091494119code.png',status:'Cases',text:'有趣的idea，疯狂造轮子 ~'}
           ]
         }
       ],
@@ -86,24 +85,27 @@ export default {
       ]
     }
   },
+  props: {
+    // currentStatus:String,
+    // loadOver: Boolean,
+    // loading: Boolean,
+    // isShow: Boolean,
+    // bgUrl: String
+  },
   methods:{
-    casesShow(){
+    casesShow(s){
       var parent_data      = this.$parent.$data,
       num                  = parseInt(6 * Math.random());
+      parent_data.isShow   = true;
       parent_data.loadOver = false;
       parent_data.loading  = false;
-      parent_data.isShow   = true;
-
-      console.log(num)
+      parent_data.currentStatus = s;
       parent_data.bgUrl    = this.backgroundImg[num].url;
-
     }
   }
 }
 </script>
 <style lang="scss" scoped>
-@import "../assets/common/base.scss";
-
 
 .panel-wall {
   display: flex;
@@ -114,7 +116,7 @@ export default {
       display: block;
       width:100%;
       height:100%;
-      color: $color-fff;
+      color: #fff;
     }
   }
 }
@@ -124,7 +126,7 @@ export default {
   align-content:space-around;
   width: 220px;
   height: 475px;
-  color: $color-fff;
+  color: #fff;
   li {
     position: relative;
     width: 100%;
@@ -155,12 +157,12 @@ export default {
       display: block;
       width: 100%;
       height: 100%;
-      border: 3px solid $color-fff;
+      border: 3px solid #fff;
       border-radius: 100%;
       box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     }
     .item-body p {
-      color: $color-fff;
+      color: #fff;
     }
     .review{
       display:flex;
