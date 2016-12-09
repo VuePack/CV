@@ -44,8 +44,8 @@ export default {
   data () {
     return {
         authorName:'里昂',
-        authorThumb:'http://7xnjvz.com1.z0.glb.clouddn.com/author.jpg',
-        mobileBg:'http://7xnjvz.com1.z0.glb.clouddn.com/mobile-simulator.png',
+        authorThumb:'https://ohv0hyr4v.qnssl.com/avatar.jpg',
+        mobileBg:'https://ohv0hyr4v.qnssl.com/mobile-simulator.png',
         justify:'',
         justify2:'space-between',
         // space-between
@@ -68,29 +68,29 @@ export default {
             {
                 status:'Mobile',
                 list: [
-                    {url:'http://likr.cn/2015/12/25/flex新旧混合写法兼容安卓微信x5内核/',title:'flex新旧混合写法兼容安卓微信x5内核',time:' 2015-12-25 09:53:27'},
-                    {url:'http://likr.cn/2015/10/23/安卓非微信浏览器呼出高德地图App/',title:'安卓非微信浏览器呼出高德地图App，若没安装高德地图App，打开网页版高德地图解决方案',time:'2015-10-23 12:44:42'},
-                    {url:'http://likr.cn/2015/12/02/微信h5踩坑/',title:'微信h5踩坑',time:'2015-12-02 20:43:59'},
-                    {url:'http://likr.cn/2015/10/26/微信公共号呼起微信授权页面/',title:'微信公共号呼起微信授权页面',time:'2015-10-26 17:46:54'},
+                    {url:'https://likr.cn/2015/12/25/flex新旧混合写法兼容安卓微信x5内核/',title:'flex新旧混合写法兼容安卓微信x5内核',time:' 2015-12-25 09:53:27'},
+                    {url:'https://likr.cn/2015/10/23/安卓非微信浏览器呼出高德地图App/',title:'安卓非微信浏览器呼出高德地图App，若没安装高德地图App，打开网页版高德地图解决方案',time:'2015-10-23 12:44:42'},
+                    {url:'https://likr.cn/2015/12/02/微信h5踩坑/',title:'微信h5踩坑',time:'2015-12-02 20:43:59'},
+                    {url:'https://likr.cn/2015/10/26/微信公共号呼起微信授权页面/',title:'微信公共号呼起微信授权页面',time:'2015-10-26 17:46:54'},
                 ]
             },
             {
                 status:'JavaScript',
                 list: [
-                    {url:'http://likr.cn/2016/09/23/VUE学习工作笔记/',title:'VUE学习工作笔记',time:'2016-09-23 20:38:11'},
-                    {url:'http://likr.cn/2016/09/14/针对项目思考的前端脚手架/',title:'针对项目思考的前端脚手架',time:'2016-09-14 21:46:48'},
-                    {url:'http://likr.cn/2016/08/25/JS获取URL中GET的参数转换为JSON格式/',title:'JS获取URL中GET的参数转换为JSON格式',time:'2016-08-25 19:55:59'},
-                    {url:'http://likr.cn/2016/01/08/JS控制cookie，选中复选框下次不再提醒/',title:'JS控制cookie，选中复选框下次不再提醒',time:'2016-01-08 22:27:15'},
-                    {url:'http://likr.cn/2015/11/25/pc网站微信登录开发/',title:'pc网站微信登录开发',time:'2015-11-25 15:46:27'},
+                    {url:'https://likr.cn/2016/09/23/VUE学习工作笔记/',title:'VUE学习工作笔记',time:'2016-09-23 20:38:11'},
+                    {url:'https://likr.cn/2016/09/14/针对项目思考的前端脚手架/',title:'针对项目思考的前端脚手架',time:'2016-09-14 21:46:48'},
+                    {url:'https://likr.cn/2016/08/25/JS获取URL中GET的参数转换为JSON格式/',title:'JS获取URL中GET的参数转换为JSON格式',time:'2016-08-25 19:55:59'},
+                    {url:'https://likr.cn/2016/01/08/JS控制cookie，选中复选框下次不再提醒/',title:'JS控制cookie，选中复选框下次不再提醒',time:'2016-01-08 22:27:15'},
+                    {url:'https://likr.cn/2015/11/25/pc网站微信登录开发/',title:'pc网站微信登录开发',time:'2015-11-25 15:46:27'},
                 ]
             },
             {
                 status:'Mood',
                 list: [
-                    {url:'http://likr.cn/2016/09/18/《七月的安生》/',title:'《七月的安生》',time:'2016-09-18 21:06:57'},
-                    {url:'http://likr.cn/2016/08/20/聊聊最近/',title:'聊聊最近',time:'2016-08-20 20:59:03'},
-                    {url:'http://likr.cn/2016/01/28/云南记/',title:'云南记',time:'2016-01-28 21:45:26'},
-                    {url:'http://likr.cn/2015/12/30/凯锅2015年终总结/',title:'凯锅2015年终总结',time:'2015-12-30 20:00:22'},
+                    {url:'https://likr.cn/2016/09/18/《七月的安生》/',title:'《七月的安生》',time:'2016-09-18 21:06:57'},
+                    {url:'https://likr.cn/2016/08/20/聊聊最近/',title:'聊聊最近',time:'2016-08-20 20:59:03'},
+                    {url:'https://likr.cn/2016/01/28/云南记/',title:'云南记',time:'2016-01-28 21:45:26'},
+                    {url:'https://likr.cn/2015/12/30/凯锅2015年终总结/',title:'凯锅2015年终总结',time:'2015-12-30 20:00:22'},
                 ]
             }
         ]
@@ -106,7 +106,7 @@ export default {
         parent_data.isShow   = false;
         parent_data.loadOver = true;
         parent_data.loading  = false;
-        parent_data.bgUrl    = 'http://7xnjvz.com1.z0.glb.clouddn.com/2016091468798code.jpg';
+        parent_data.bgUrl    = 'https://ohv0hyr4v.qnssl.com/2016091468798code.jpg';
     }
   },
   watch:{

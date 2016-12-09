@@ -32,7 +32,7 @@ export default {
         margin-left: -447px;
         height: 350px;
         top: 0px;
-        background: url('http://7xnjvz.com1.z0.glb.clouddn.com/2016091463899clound.png') no-repeat center;
+        background: url('https://ohv0hyr4v.qnssl.com/2016091463899clound.png') no-repeat center;
     }
 }
 </style>

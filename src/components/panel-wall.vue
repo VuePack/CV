@@ -54,7 +54,7 @@ export default {
         {
           type:'left',
           list:[
-            {name:'个人博客',url:'http://7xnjvz.com1.z0.glb.clouddn.com/avatar.png',link:'http://likr.cn',text:'记录零散思绪和成长记录'},
+            {name:'个人博客',url:'https://ohv0hyr4v.qnssl.com/avatar.jpg',link:'https://likr.cn',text:'记录零散思绪和成长记录'},
             {name:'JavaScript',status:'JavaScript'}
           ]
         },
@@ -70,18 +70,18 @@ export default {
           type:'right',
           list:[
             {name:'Mobile',status:'Mobile'},
-            {name:'折腾案例',url:'http://7xnjvz.com1.z0.glb.clouddn.com/2016091494119code.png',status:'Cases',text:'有趣的idea，疯狂造轮子 ~'}
+            {name:'折腾案例',url:'https://ohv0hyr4v.qnssl.com/2016091494119code.png',status:'Cases',text:'有趣的idea，疯狂造轮子 ~'}
           ]
         }
       ],
       backgroundImg:[
-        {url: 'http://7xnjvz.com1.z0.glb.clouddn.com/bg1.png'},
-        {url: 'http://7xnjvz.com1.z0.glb.clouddn.com/bg2.png'},
-        {url: 'http://7xnjvz.com1.z0.glb.clouddn.com/bg3.png'},
-        {url: 'http://7xnjvz.com1.z0.glb.clouddn.com/bg4.png'},
-        {url: 'http://7xnjvz.com1.z0.glb.clouddn.com/bg5.png'},
-        {url: 'http://7xnjvz.com1.z0.glb.clouddn.com/bg6.png'},
-        {url: 'http://7xnjvz.com1.z0.glb.clouddn.com/bg7.png'}
+        {url: 'https://ohv0hyr4v.qnssl.com/bg1.png'},
+        {url: 'https://ohv0hyr4v.qnssl.com/bg2.png'},
+        {url: 'https://ohv0hyr4v.qnssl.com/bg3.png'},
+        {url: 'https://ohv0hyr4v.qnssl.com/bg4.png'},
+        {url: 'https://ohv0hyr4v.qnssl.com/bg5.png'},
+        {url: 'https://ohv0hyr4v.qnssl.com/bg6.png'},
+        {url: 'https://ohv0hyr4v.qnssl.com/bg7.png'}
       ]
     }
   },
