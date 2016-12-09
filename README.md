@@ -1,4 +1,4 @@
-# list
+# CV
 
 > A Vue.js project
 
