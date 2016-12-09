@@ -59,10 +59,14 @@ export default {
             {
                 status:'Cases',
                 list: [
-                    {url:'http://kevin.coding.io/AppMobile/WebApp/licai1/'},
-                    {url:'http://kevin.coding.io/AppMobile/WebApp/licai2/'},
-                    {url:'http://kevin.coding.io/AppMobile/H5Mobile/car/'},
-                    {url:'http://kevin.coding.io/AppMobile/H5Mobile/salon/'}
+                    // {url:'http://kevin.coding.io/AppMobile/WebApp/licai1/'},
+                    // {url:'http://kevin.coding.io/AppMobile/WebApp/licai2/'},
+                    // {url:'http://kevin.coding.io/AppMobile/H5Mobile/car/'},
+                    // {url:'http://kevin.coding.io/AppMobile/H5Mobile/salon/'}
+                    {url:''},
+                    {url:''},
+                    {url:''},
+                    {url:''}
                 ]
             },
             {
