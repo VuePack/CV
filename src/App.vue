@@ -47,7 +47,7 @@ export default {
     return {
       currentStatus : "",
       firstShow     : true,
-      bgUrl: 'http://7xnjvz.com1.z0.glb.clouddn.com/2016091468798code.jpg',
+      bgUrl: 'https://ohv0hyr4v.qnssl.com/2016091468798code.jpg',
       loading   : true,
       loadOver  : false,
       isShow    : false,
