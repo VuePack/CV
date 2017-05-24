@@ -62,39 +62,36 @@ export default {
                     // {url:'http://kevin.coding.io/AppMobile/WebApp/licai1/'},
                     // {url:'http://kevin.coding.io/AppMobile/WebApp/licai2/'},
                     // {url:'http://kevin.coding.io/AppMobile/H5Mobile/car/'},
-                    // {url:'http://kevin.coding.io/AppMobile/H5Mobile/salon/'}
-                    {url:''},
-                    {url:''},
-                    {url:''},
-                    {url:''}
+                    {url:'https://huisu123.com/h5/#/home'}
                 ]
             },
             {
                 status:'Mobile',
                 list: [
-                    {url:'https://likr.cn/2015/12/25/flex新旧混合写法兼容安卓微信x5内核/',title:'flex新旧混合写法兼容安卓微信x5内核',time:' 2015-12-25 09:53:27'},
-                    {url:'https://likr.cn/2015/10/23/安卓非微信浏览器呼出高德地图App/',title:'安卓非微信浏览器呼出高德地图App，若没安装高德地图App，打开网页版高德地图解决方案',time:'2015-10-23 12:44:42'},
-                    {url:'https://likr.cn/2015/12/02/微信h5踩坑/',title:'微信h5踩坑',time:'2015-12-02 20:43:59'},
-                    {url:'https://likr.cn/2015/10/26/微信公共号呼起微信授权页面/',title:'微信公共号呼起微信授权页面',time:'2015-10-26 17:46:54'},
+                    {url:'http://likr.cn/home.html#/post/fbcb53161b83a704fef42da1efef5643fa5c6947',title:'flex新旧混合写法兼容安卓微信x5内核',time:' 2015-12-25 09:53:27'},
+                    {url:'http://likr.cn/home.html#/post/bd6c74e5f5068144bb42aa7dcca3873782657d56',title:'安卓非微信浏览器呼出高德地图App，若没安装高德地图App，打开网页版高德地图解决方案',time:'2015-10-23 12:44:42'},
+                    {url:'http://likr.cn/home.html#/post/fb2b5b5eadb55526169eaa1bacba67a6071be5ee',title:'微信h5踩坑',time:'2015-12-02 20:43:59'},
+                    {url:'http://likr.cn/home.html#/post/3aff5c7a81201a8e1e79c6f22860486d4d0f85e8',title:'微信公共号呼起微信授权页面',time:'2015-10-26 17:46:54'},
                 ]
             },
             {
                 status:'JavaScript',
                 list: [
-                    {url:'https://likr.cn/2016/09/23/VUE学习工作笔记/',title:'VUE学习工作笔记',time:'2016-09-23 20:38:11'},
-                    {url:'https://likr.cn/2016/09/14/针对项目思考的前端脚手架/',title:'针对项目思考的前端脚手架',time:'2016-09-14 21:46:48'},
-                    {url:'https://likr.cn/2016/08/25/JS获取URL中GET的参数转换为JSON格式/',title:'JS获取URL中GET的参数转换为JSON格式',time:'2016-08-25 19:55:59'},
-                    {url:'https://likr.cn/2016/01/08/JS控制cookie，选中复选框下次不再提醒/',title:'JS控制cookie，选中复选框下次不再提醒',time:'2016-01-08 22:27:15'},
-                    {url:'https://likr.cn/2015/11/25/pc网站微信登录开发/',title:'pc网站微信登录开发',time:'2015-11-25 15:46:27'},
+                    {url:'http://likr.cn/home.html#/post/835b3febd61993fc4de33e5f37c5b30e084dfdc1',title:'VUE在购物车的应用场景',time:'2016-10-1 21:22:11'},
+                    {url:'http://likr.cn/home.html#/post/08e99f41c98c2cefaae055f32f09a032e2149f7f',title:'VUE学习工作笔记',time:'2016-09-23 20:38:11'},
+                    {url:'http://likr.cn/home.html#/post/7473b1b8369e948afb7b02c448df38c6724d2fcb',title:'针对项目思考的前端脚手架',time:'2016-09-14 21:46:48'},
+                    {url:'http://likr.cn/home.html#/post/51fbaab80b30f0c5c0282af218cbc2dc39f9d6f6',title:'JS获取URL中GET的参数转换为JSON格式',time:'2016-08-25 19:55:59'},
+                    {url:'http://likr.cn/home.html#/post/45a80f27e879f0b3c3f41b3ef6c86f70114ee63a',title:'pc网站微信登录开发',time:'2015-11-25 15:46:27'},
                 ]
             },
             {
                 status:'Mood',
                 list: [
-                    {url:'https://likr.cn/2016/09/18/《七月的安生》/',title:'《七月的安生》',time:'2016-09-18 21:06:57'},
-                    {url:'https://likr.cn/2016/08/20/聊聊最近/',title:'聊聊最近',time:'2016-08-20 20:59:03'},
-                    {url:'https://likr.cn/2016/01/28/云南记/',title:'云南记',time:'2016-01-28 21:45:26'},
-                    {url:'https://likr.cn/2015/12/30/凯锅2015年终总结/',title:'凯锅2015年终总结',time:'2015-12-30 20:00:22'},
+                    {url:'http://likr.cn/home.html#/post/680877b5b72a40bdc76c86b3216b100d765377ca',title:'2016年终总结',time:'2016-12-30 21:06:57'},
+                    {url:'http://likr.cn/home.html#/post/5c514172753baa5c427dca676ab972ed2c354d31',title:'《七月的安生》',time:'2016-09-18 21:06:57'},
+                    {url:'http://likr.cn/home.html#/post/f43a0c8c4f0e8dc5ae8373382490dbd5af5ab708',title:'聊聊最近',time:'2016-08-20 20:59:03'},
+                    {url:'http://likr.cn/home.html#/post/acbbdcb3c61540ca984ccda4155589e491779dc1',title:'云南记',time:'2016-01-28 21:45:26'},
+                    {url:'http://likr.cn/home.html#/post/8bd8d07a7ee005a39a2a156c7523c49b1cd898c4',title:'2015年终总结',time:'2015-12-30 20:00:22'},
                 ]
             }
         ]

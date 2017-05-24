@@ -54,7 +54,7 @@ export default {
         {
           type:'left',
           list:[
-            {name:'个人博客',url:'https://ohv0hyr4v.qnssl.com/avatar.jpg',link:'https://likr.cn',text:'记录零散思绪和成长记录'},
+            {name:'个人博客',url:'https://ohv0hyr4v.qnssl.com/avatar.jpg',link:'http://likr.cn',text:'记录零散思绪和成长记录'},
             {name:'JavaScript',status:'JavaScript'}
           ]
         },
